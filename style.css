@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: #54595E;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px,1100px) 1fr;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+header img {
+    margin: 10px 0;
+}
+
+.headGrid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.tableTitle {
+    display: table;
+    height: 100%;
+}
+
+header a {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FBB8F0;
+}
+
+.container {
+    display: grid;
+    margin: 0 10px;
+    grid-template-columns: 1fr minmax(200px,1100px) 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.overallGrid {
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+    height: 300px;
+}
+
+.tableCaption {
+    display: table;
+    height: 300px;
+}
+
+h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+span.cursor {
+    position: relative;
+    right: 0.1em;
+    bottom: 0.1em;
+    animation-duration: 1.5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    color: #FBB8F0;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.overallGrid img {
+    float: right;
+}
+
+.divider50 {
+    height: 50px;
+}
+
+.divider200 {
+    height: 200px;
+}
+
+.timelineGrid {
+    display: grid;
+    grid-template-columns: 60px 1fr
+}
+
+.tableIcon {
+    display: grid;
+    grid-template-rows: 1fr 30px 1fr;
+}
+
+.timelineGrid img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 11px 0 0 0;
+}
+
+h3 {
+    color: #FBB8F0;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 0 7px 0;
+}
+
+p {
+    height: 10000px;
+}
