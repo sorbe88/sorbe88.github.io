@@ -38,6 +38,11 @@ header a {
     color: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 a:hover {
     text-decoration: underline;
     text-decoration-color: #FBB8F0;
